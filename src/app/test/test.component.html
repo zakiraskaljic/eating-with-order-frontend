@@ -1,0 +1,14 @@
+<div class="container">
+  <img src="assets/images/IMG_0855.PNG" alt="Image">
+  <div class =wrapper1>
+    <h1>Questions</h1>
+    <div class="wrapper" *ngFor="let question of questions">
+        <strong>{{ question.question }}</strong>
+        <div class="answer">
+          <mat-checkbox class="white-text">Yes</mat-checkbox>
+          <mat-checkbox class="example-margin">No</mat-checkbox>
+        </div>
+    </div>
+    <button (click)="navigateToHome()">Submit</button>
+  </div>
+</div>

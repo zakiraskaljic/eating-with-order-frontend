@@ -9,6 +9,6 @@ import {Router} from "@angular/router";
 export class HeaderComponent {
   constructor(private router: Router) {}
   navigateToHome() {
-    this.router.navigate(['/h']);
+    this.router.navigate(['']);
   }
 }
