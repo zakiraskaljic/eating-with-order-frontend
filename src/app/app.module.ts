@@ -12,6 +12,7 @@ import { TestComponent } from './test/test.component';
 import {CommonModule} from "@angular/common";
 import {QuestionService} from "./services/question.service";
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { CreateDiaryComponent } from './create-diary/create-diary.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     HomeComponent,
     HeaderComponent,
     TestComponent,
+    CreateDiaryComponent,
   ],
   imports: [
     CommonModule,

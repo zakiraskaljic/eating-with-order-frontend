@@ -9,7 +9,14 @@ import {Router} from "@angular/router";
 export class HomeComponent {
 
   constructor(private router: Router) {}
-  navigateToTest() {
-      this.router.navigate(['test']);
+  navigateTo(route: string) {
+    switch (route) {
+      case 'test':
+        this.router.navigate(['test']);
+        break;
+      case 'create-diary':
+        this.router.navigate(['create-diary']);
+        break;
+      }
   }
 }

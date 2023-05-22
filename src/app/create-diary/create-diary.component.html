@@ -1,0 +1,12 @@
+<div class="container">
+  <img src="assets/images/IMG_0904.PNG" alt="Image">
+  <div class =wrapper>
+    <h2>My Diary</h2>
+    <p>Date: {{ currentDate | date: 'dd/MM/yyyy' }}</p>
+    <div class ="speech-bubble">
+      <input type="text" placeholder="This is your diary. Let it out, right here...">
+    </div>
+    <button (click)="navigateTo('')">Create New Entry</button>
+  </div>
+</div>
+

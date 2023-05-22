@@ -1,0 +1,55 @@
+.container {
+  background-color: #15998E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lucida Console", monospace;
+  color:white
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: #008080;
+  font-weight: bold;
+  box-shadow: 5px 8px 0 0 #016367;
+}
+
+.speech-bubble {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  resize: vertical;
+  text-align: left;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.speech-bubble input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+.speech-bubble input[type="text"]:focus {
+  outline: none;
+  background-color: #e2e2e2;
+}
+
+
+
