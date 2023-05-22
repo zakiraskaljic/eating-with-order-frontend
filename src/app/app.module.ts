@@ -13,6 +13,11 @@ import {CommonModule} from "@angular/common";
 import {QuestionService} from "./services/question.service";
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CreateDiaryComponent } from './create-diary/create-diary.component';
+import { CalendarPageComponent } from './calendar-page/calendar-page.component';
+import {DiaryEntryService} from "./services/diary-entry.service";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
 
 @NgModule({
   declarations: [
@@ -21,6 +26,7 @@ import { CreateDiaryComponent } from './create-diary/create-diary.component';
     HeaderComponent,
     TestComponent,
     CreateDiaryComponent,
+    CalendarPageComponent,
   ],
   imports: [
     CommonModule,
@@ -31,9 +37,13 @@ import { CreateDiaryComponent } from './create-diary/create-diary.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatCheckboxModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [
     QuestionService,
+    DiaryEntryService,
   ],
   bootstrap: [AppComponent]
 })

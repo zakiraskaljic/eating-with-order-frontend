@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {QuestionService} from "../services/question.service";
-import {Question} from "../models/question";
+import {Question} from "../models/question.model";
 import {Router} from "@angular/router";
 
 @Component({
