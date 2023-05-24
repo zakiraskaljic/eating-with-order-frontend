@@ -18,6 +18,7 @@ import {DiaryEntryService} from "./services/diary-entry.service";
 import {CalendarModule, DateAdapter} from "angular-calendar";
 import {adapterFactory} from "angular-calendar/date-adapters/date-fns";
 import { HotlineComponent } from './hotline/hotline.component';
+import { PetsComponent } from './pets/pets.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HotlineComponent } from './hotline/hotline.component';
     CreateDiaryComponent,
     CalendarPageComponent,
     HotlineComponent,
+    PetsComponent,
   ],
   imports: [
     CommonModule,

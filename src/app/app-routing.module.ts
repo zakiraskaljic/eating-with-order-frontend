@@ -5,13 +5,15 @@ import {TestComponent} from "./test/test.component";
 import {CreateDiaryComponent} from "./create-diary/create-diary.component";
 import {CalendarPageComponent} from "./calendar-page/calendar-page.component";
 import {HotlineComponent} from "./hotline/hotline.component";
+import {PetsComponent} from "./pets/pets.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'hotline', component: HotlineComponent },
   { path: 'test', component: TestComponent },
-  { path: 'create-diary', component:CreateDiaryComponent },
-  { path: 'calendar', component:CalendarPageComponent },
+  { path: 'create-diary', component: CreateDiaryComponent },
+  { path: 'pets', component: PetsComponent },
+  { path: 'calendar', component: CalendarPageComponent },
 ];
 
 @NgModule({

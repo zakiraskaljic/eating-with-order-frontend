@@ -17,6 +17,9 @@ export class HomeComponent {
       case 'create-diary':
         this.router.navigate(['create-diary']);
         break;
+      case 'pets':
+        this.router.navigate(['pets']);
+        break;
       case 'calendar':
         this.router.navigate(['calendar']);
         break;
