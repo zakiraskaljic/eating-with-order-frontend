@@ -17,7 +17,7 @@ export class DiaryEntryService {
   ];
 
   constructor() { }
-  getDiaryEntries(): Observable<DiaryEntry[]> {
-    return of(this.entries);
+  getDiaryEntries(): DiaryEntry[] {
+    return this.entries;
   }
 }

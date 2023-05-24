@@ -15,9 +15,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CreateDiaryComponent } from './create-diary/create-diary.component';
 import { CalendarPageComponent } from './calendar-page/calendar-page.component';
 import {DiaryEntryService} from "./services/diary-entry.service";
-import {MatNativeDateModule} from "@angular/material/core";
-import {MatInputModule} from "@angular/material/input";
-import {MatDatepickerModule} from "@angular/material/datepicker";
+import {CalendarModule, DateAdapter} from "angular-calendar";
+import {adapterFactory} from "angular-calendar/date-adapters/date-fns";
+import { HotlineComponent } from './hotline/hotline.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     TestComponent,
     CreateDiaryComponent,
     CalendarPageComponent,
+    HotlineComponent,
   ],
   imports: [
     CommonModule,
@@ -37,9 +38,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     BrowserAnimationsModule,
     MatIconModule,
     MatCheckboxModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory })
   ],
   providers: [
     QuestionService,

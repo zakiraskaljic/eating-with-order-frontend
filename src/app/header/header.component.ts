@@ -11,4 +11,12 @@ export class HeaderComponent {
   navigateToHome() {
     this.router.navigate(['']);
   }
+
+  navigateToHotline() {
+    this.router.navigate(['hotline']);
+  }
+
+  isHotlinePage(): boolean {
+    return this.router.url.includes('hotline');
+  }
 }

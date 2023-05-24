@@ -20,6 +20,9 @@ export class HomeComponent {
       case 'calendar':
         this.router.navigate(['calendar']);
         break;
+      case 'hotline':
+        this.router.navigate(['hotline']);
+        break;
       }
   }
 }

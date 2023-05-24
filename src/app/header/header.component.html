@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [class.hotline-page]="isHotlinePage()">
   <div class="left-content">
     <button mat-icon-button color="white" (click)="navigateToHome()">
       <mat-icon>home</mat-icon>
@@ -6,7 +6,7 @@
     <h1><strong>eating</strong> with <strong>order</strong></h1>
   </div>
   <div class="right-content">
-    <button class="exclamation-button">
+    <button class="exclamation-button" (click)="navigateToHotline()">
       <span class="exclamation-mark">!</span>
     </button>
   </div>

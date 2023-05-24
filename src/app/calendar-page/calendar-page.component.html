@@ -1,24 +1,8 @@
-<div class="container">
-  <img src="assets/images/IMG_0909.PNG" alt="Image">
-  <div class="calendar">
-    <h2>My Calendar</h2>
-    <div class="month-header">
-      <button (click)="previousMonth()">&lt;</button>
-      <h2>{{ currentMonth | date: 'MMMM yyyy' }}</h2>
-      <button (click)="nextMonth()">&gt;</button>
-    </div>
-
-    <div class="weekdays">
-      <div class="weekday" *ngFor="let weekday of weekdays">{{ weekday }}</div>
-    </div>
-
-    <div class="days">
-      <ng-container *ngFor="let day of calendarDays">
-        <div class="day">
-          <div class="day-number">{{ day | date: 'd' }}</div>
-          <div *ngFor="let entry of getDiaryEntriesForDay(day)" class="entry">{{ entry.title }}</div>
-        </div>
-      </ng-container>
-    </div>
-  </div>
-</div>
+ <!-- <ng-container *ngIf="view === 'month'">
+  <angular-calendar-month-view
+    [viewDate]="viewDate"
+    [events]="events"
+  ></angular-calendar-month-view>
+</ng-container>
+ -->
+ 

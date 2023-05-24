@@ -1,0 +1,32 @@
+.container {
+  background-color: #D2042D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Lucida Console", monospace;
+  color: white;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  margin-bottom: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: #AA4A44;
+  font-weight: bold;
+  box-shadow: 5px 8px 0 0 #880808;
+}
+p{
+  width: 700px;
+  text-align: center;
+  margin-bottom: 30px;
+}
