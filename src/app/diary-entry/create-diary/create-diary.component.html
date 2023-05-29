@@ -1,0 +1,11 @@
+<div class="container">
+  <img src="../../../assets/images/IMG_0904.PNG" alt="Image">
+  <div class =wrapper>
+    <h2>My Diary</h2>
+    <p>Date: {{ currentDate | date: 'dd/MM/yyyy' }}</p>
+    <input type="text" placeholder="Recovery isn't linear..." >
+    <textarea class="large-textarea" rows="4" placeholder="This is your diary. Let it out, right here..."></textarea>
+    <button (click)="navigateTo('')">Create New Entry</button>
+  </div>
+</div>
+

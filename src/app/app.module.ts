@@ -12,13 +12,15 @@ import { TestComponent } from './test/test.component';
 import {CommonModule} from "@angular/common";
 import {QuestionService} from "./services/question.service";
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { CreateDiaryComponent } from './create-diary/create-diary.component';
+import { CreateDiaryComponent } from './diary-entry/create-diary/create-diary.component';
 import { CalendarPageComponent } from './calendar-page/calendar-page.component';
 import {DiaryEntryService} from "./services/diary-entry.service";
 import {CalendarModule, DateAdapter} from "angular-calendar";
 import {adapterFactory} from "angular-calendar/date-adapters/date-fns";
 import { HotlineComponent } from './hotline/hotline.component';
 import { PetsComponent } from './pets/pets.component';
+import { ShowDiaryEntryComponent } from './diary-entry/show-diary-entry/show-diary-entry.component';
+import {DiaryEntryResolver} from "./resolvers/diary-entry.resolver";
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { PetsComponent } from './pets/pets.component';
     CalendarPageComponent,
     HotlineComponent,
     PetsComponent,
+    ShowDiaryEntryComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +48,7 @@ import { PetsComponent } from './pets/pets.component';
   providers: [
     QuestionService,
     DiaryEntryService,
+    DiaryEntryResolver,
   ],
   bootstrap: [AppComponent]
 })

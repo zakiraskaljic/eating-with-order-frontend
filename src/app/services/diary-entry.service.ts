@@ -20,4 +20,12 @@ export class DiaryEntryService {
   getDiaryEntries(): DiaryEntry[] {
     return this.entries;
   }
+  getDiaryEntry(id: number): Observable<DiaryEntry> {
+    const entry = this.entries.find((entry) => entry.id === id);
+    if (entry) {
+      return of(entry);
+    } else {
+      throw new Error(`Diary entry with ID ${id} not found.`);
+    }
+  }
 }

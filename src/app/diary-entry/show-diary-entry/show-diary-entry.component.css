@@ -1,0 +1,26 @@
+.container {
+  background-color: #15998E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  margin: 0 auto;
+  font-family: "Lucida Console", monospace;
+  color: white;
+}
+
+img {
+  width: 350px;
+  height: 400px;
+  margin-right: 100px;
+}
+
+.text-bubble {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  color: #008080;
+  font-weight: bold;
+  box-shadow: 5px 8px 0 0 #016367;
+}
